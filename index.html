@@ -1,4 +1,3 @@
- <!--Serrano Flaco Alan jovanni | 0898 | 5°J |Programación -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -51,7 +50,7 @@
       text-decoration: none;
     }
 
-    /* 4. Sección Principal */
+    /* 4. Sección Principal (Hero) */
     .subtitulo-producto {
       color: #1d1d1f;
       font-size: 19px;
@@ -85,7 +84,7 @@
       border-radius: 15px;
       text-decoration: none;
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
     .boton-enviar {
@@ -99,11 +98,18 @@
       margin-top: 15px;
     }
 
-    /* 6. Texto del precio */
+    /* 6. Texto de precios */
     .texto-precio {
       color: #6e6e73;
       font-size: 14px;
       margin: 15px 0 20px 0;
+    }
+
+    .precio-tienda {
+      color: #1d1d1f;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 5px 0 0 0;
     }
 
     /* 7. Tamaños de las imágenes */
@@ -237,7 +243,7 @@
         <a href="">
           <img src="Macbook.png" alt="MacBook" class="imagen-tienda">
         </a>
-        <br>
+        <p class="precio-tienda">Desde $14,999 MXN</p>
         <a href="" class="boton-comprar-tienda">Comprar</a>
       </td>
 
@@ -248,7 +254,7 @@
         <a href="">
           <img src="iPhone 15.png" alt="iPhone" class="imagen-tienda">
         </a>
-        <br>
+        <p class="precio-tienda">Desde $23,999 MXN</p>
         <a href="" class="boton-comprar-tienda">Comprar</a>
       </td>
 
@@ -259,7 +265,7 @@
         <a href="">
           <img src="ipad air.png" alt="iPad" class="imagen-tienda">
         </a>
-        <br>
+        <p class="precio-tienda">Desde $12,999 MXN</p>
         <a href="" class="boton-comprar-tienda">Comprar</a>
       </td>
     </tr>
@@ -276,7 +282,7 @@
         <a href="">
           <img src="apple watch.png" alt="Apple Watch" class="imagen-tienda">
         </a>
-        <br>
+        <p class="precio-tienda">Desde $8,999 MXN</p>
         <a href="" class="boton-comprar-tienda">Comprar</a>
       </td>
 
@@ -287,7 +293,7 @@
         <a href="">
           <img src="airpods.png" alt="AirPods" class="imagen-tienda">
         </a>
-        <br>
+        <p class="precio-tienda">Desde $4,999 MXN</p>
         <a href="" class="boton-comprar-tienda">Comprar</a>
       </td>
 
@@ -305,7 +311,7 @@
         <!-- Formulario configurado con Formsubmit hacia tu correo de la escuela -->
         <form class="formulario-soporte" action="https://formsubmit.co/a.24308051280898@cbtis128.edu.mx" method="POST">
           
-          <!-- Evita problemas de spam y redirección -->
+          <!-- Evita captcha -->
           <input type="hidden" name="_captcha" value="false">
 
           <label for="nombre">Nombre completo:</label>
