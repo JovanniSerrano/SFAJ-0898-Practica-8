@@ -210,6 +210,25 @@
       resize: vertical;
       height: 100px;
     }
+
+    /* 10. Estilos del Pie de Página (Footer) */
+    footer {
+      background-color: #f5f5f7;
+      color: #6e6e73;
+      font-size: 12px;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    footer p {
+      margin: 3px 0;
+    }
+
+    .autor-destacado {
+      color: #1d1d1f;
+      font-size: 13px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -334,17 +353,16 @@
       <td style="width: 16.66%;"></td>
     </tr>
 
-    <!-- SECCIÓN DE SOPORTE Y FORMULARIO CON ENVÍO A TU CORREO -->
+    <!-- SECCIÓN DE SOPORTE Y FORMULARIO -->
     <tr>
       <td colspan="6" style="padding: 50px 20px; border-top: 1px solid #e5e5e5;" id="soporte">
         <h2 class="titulo-seccion">Soporte Técnico de Apple</h2>
         <p class="texto-seccion">¿En qué podemos ayudarte hoy?</p>
         <br>
 
-        <!-- Formulario configurado con Formsubmit hacia tu correo de la escuela -->
+        <!-- Formulario configurado con Formsubmit -->
         <form class="formulario-soporte" action="https://formsubmit.co/a.24308051280898@cbtis128.edu.mx" method="POST">
           
-          <!-- Evita captcha -->
           <input type="hidden" name="_captcha" value="false">
 
           <label for="nombre">Nombre completo:</label>
@@ -374,12 +392,19 @@
         </form>
       </td>
     </tr>
-   <footer>
-    <p><strong>SERRANO FLACO ALAN JOVANNI</strong></p>
-    <p>0898 5°J</p>
-    <p>PROGRAMACIÓN</p>
-    <p>MTRA: LETICIA MEZA DIAZ</p>
-    </footer>
+
+    <!-- FILA DEL PIE DE PÁGINA (FOOTER) -->
+    <tr>
+      <td colspan="6" style="padding: 0; border-top: 1px solid #e5e5e5;">
+        <footer>
+          <p class="autor-destacado">SERRANO FLACO ALAN JOVANNI</p>
+          <p>0898 | 5°J</p>
+          <p>PROGRAMACIÓN</p>
+          <p>MTRA: LETICIA MEZA DÍAZ</p>
+        </footer>
+      </td>
+    </tr>
+
   </table>
 
 </body>
